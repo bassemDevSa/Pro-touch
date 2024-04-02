@@ -1,0 +1,125 @@
+/* ===========================
+ table of contents
+==============================
+ 
+1. Left Section
+2. 2. Right Section ==> Animation 
+
+*/
+
+
+section.hero {
+    margin-top: 3rem;
+}
+
+/* ===========================
+ 1. Left Section
+==============================
+ */
+section.hero .parent-avatar.flex {
+    align-items: end;
+    gap: 0.6rem;
+
+}
+
+section.hero .left-section {
+    flex-grow: 1;
+}
+
+section.hero .avatar {
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 255, 255, 0.014);
+    padding: 1px;
+    box-shadow: 1px 1px 40px rgba(127, 255, 212, 0.521) inset;
+
+}
+
+section.hero .icon-verified {
+    color: var(--orange);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+section.hero h1.titel {
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--titel);
+}
+
+section.hero p.sub-titel {
+    color: var(--subtitel);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+}
+
+section.hero .login .button-login {
+    background-color: var(--bgButton);
+    padding: 0.5rem 0;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 40px rgba(15, 12, 12, 0.199);
+    border: 0.001rem solid rgba(0, 255, 255, 0.082);
+    color: var(--titel);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    opacity: 0.9;
+
+}
+
+section.hero .login .button-login:hover {
+    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.082) inset;
+    color: var(--titel);
+    transition: 0.4s;
+    border: 1px solid var(--orange);
+    opacity: 1;
+    
+    
+
+
+
+}
+
+@media (max-width: 600px) {
+    section.hero .login .button-login {
+       
+        padding: 0.6rem 0;
+        width: 120px;
+        
+        font-size: 0.9rem;
+    
+    
+    }
+
+  section.hero .login{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+    }
+
+
+
+
+/* ===========================
+ 2. Right Section ==> Animation 
+==============================
+ */
+ section.hero .animation {
+    
+        width: 30%;
+        translate: 100px 55px;
+        margin-right: 136px;
+        margin-bottom: 50px;
+  }
+  
+  @media (max-width: 1250px) {
+    section.hero .animation {
+      display: none;
+    }
+  }

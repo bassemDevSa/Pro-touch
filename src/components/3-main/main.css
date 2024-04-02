@@ -1,0 +1,238 @@
+/* ===========================
+ table of contents
+==============================
+ 
+1. Left-section ==> Button
+2. Right-section ==> Cards 
+3.  3. Responsive Design (Media Query)
+
+*/
+main.flex {
+  gap: 2.64rem;
+  align-items: start;
+}
+
+/* ===========================
+ 1. Left-section ==> Button
+==============================*/
+main.flex .left-section.flex {
+  flex-direction: column;
+  gap: 10px;
+}
+
+main.flex .left-section.flex button {
+  background-color: var(--bgButton);
+  padding: 0.5rem 0;
+  width: 150px;
+  text-align: center;
+  box-shadow: 1px 1px 40px rgba(15, 12, 12, 0.199);
+  border: 0.001rem solid rgba(0, 255, 255, 0.082);
+  color: var(--subtitel);
+  font-size: 1rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.light main.flex .left-section.flex button {
+  opacity: 1;
+}
+
+main.flex .left-section.flex button:hover {
+
+  opacity: 1;
+}
+
+main.flex .left-section.flex button.active {
+  color: var(--titel);
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.6rem 0;
+  border: 1px solid var(--orange);
+  box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.082) inset;
+
+}
+.light main.flex .left-section.flex button.active {
+  border: 1px solid black
+}
+
+
+
+
+
+/* ===========================
+ 1. Right-section ==> Cards
+==============================*/
+
+main.flex .right-section {
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 18px;
+  background: #1d1d1d;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: justify;
+  cursor: pointer;
+  margin: 0;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+
+}
+.light .card { background: #f1ece2;}
+
+.rgb::after {
+  
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000 0%,
+      #ff9a00 10%,
+      #d0de21 20%,
+      #4fdc4a 30%,
+      #3fdad8 40%,
+      #2fc9e2 50%,
+      #1c7fee 60%,
+      #5f15f2 70%,
+      #ba0cf8 80%,
+      #fb07d9 90%,
+      #ff0000 100%) repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: 1px;
+  border-radius: 16px;
+  filter: blur(5px);
+  transform: translateZ(-1px);
+  animation: rgb 6s linear infinite;
+}
+
+.rgb:hover::after {
+
+  content: "";
+  background: linear-gradient(45deg,
+      #00aeff 0%,
+      #00ffaa 10%,
+      #214dde 20%,
+      #4fdc4a 30%,
+      #3fdad8 40%,
+      #2fc9e2 50%,
+      #1c7fee 60%,
+      #15acf2 70%,
+      #0c9af8 80%,
+      #0799fb 90%,
+      #0077ff 100%) repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: -3px;
+  border-radius: 16px;
+  filter: blur(6px);
+  transform: translateZ(-1px);
+  animation: rgb 0s linear infinite;
+  transition: 0.5s;
+
+}
+
+@keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main.flex .right-section .card img {
+  width: 266px;
+  border-radius: 18px 18px 0 0;
+
+}
+
+.card .box {
+  padding: 1rem 0.7rem;
+  width: 266px;
+
+
+
+
+}
+
+.card .box h1 {
+  color: var(--titel);
+  word-wrap: break-word;
+  text-transform: capitalize;
+}
+
+.card .box p {
+  color: var(--subtitel);
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  word-wrap: break-word;
+
+}
+
+
+.card .box .icons {
+  justify-content: space-between;
+  border-top: 1px solid var(--bgHeader);
+  padding-top: 11px;
+}
+
+.card .box .icons .link {
+  color: var(--orange);
+  font-size: 0.8rem;
+  margin-right: 11px;
+
+
+}
+
+.card .box .icons .link span {
+  align-self: flex-end;
+  margin-left: 5px;
+}
+
+/* =================================
+ 3. Responsive Design (Media Query)
+====================================
+ */
+@media (max-width: 600px) {
+  
+  main.flex {
+    flex-direction: column;
+    gap: 2.64rem;
+    align-items:center;
+  }
+  main.flex .left-section.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  main.flex .left-section.flex button {
+    
+    padding: 0.8rem 0;
+    width: 120px;
+    
+   
+    font-size: 0.9rem;
+   
+  }
+  
+
+  }
+
+
+
+
+
+
+
+
+

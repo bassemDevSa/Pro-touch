@@ -1,0 +1,150 @@
+.table-bord .right-section {
+
+    flex-grow: 0.7;
+
+}
+
+.table-bord .right-section .objectif {
+
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 10px 0;
+
+    box-shadow: 1px 1px 6px rgb(53, 53, 53);
+
+    background-color: var(--bgBord);
+}
+
+.table-bord .right-section h1 {
+    color: var(--titel);
+    font-size: 1.7rem;
+    margin-bottom: 0.4rem;
+}
+
+.table-bord .right-section p {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    color: var(--subtitel);
+}
+
+.table-bord .right-section label {
+    color: var(--titel);
+    font-weight: bold;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-bord .right-section span {
+    margin-right: 1px;
+    color: var(--subtitel);
+    font-size: 0.7rem;
+}
+
+.table-bord .right-section form .input-radio {
+    box-shadow: 0px 0px 0px 1px #6d6d6d;
+    font-size: 3em;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+
+    border: 1px solid #fff;
+    background-clip: border-box;
+    border-radius: 50%;
+    appearance: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+.table-bord .right-section form .input-radio {
+    box-shadow: 0px 0px 0px 1px aqua;
+    background-color: rgb(255, 255, 255);
+}
+
+.table-bord .right-section form .input-radio:checked {
+    box-shadow: 0px 0px 0px 1px aqua;
+    background-color: #06b6fc;
+}
+
+.table-bord .right-section .audience {
+
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 10px 0;
+
+    box-shadow: 1px 1px 6px rgb(53, 53, 53);
+
+    background-color: var(--bgBord);
+}
+
+.table-bord .right-section .audience .age.flex {
+    gap: 3rem;
+    margin: 1.2rem 0;
+}
+
+.table-bord .right-section .audience .age.flex label input {
+    margin-right: 10px;
+    color: black;
+    font-weight: 700;
+    background-color: hsl(0deg 0% 90.7%);
+    border: 1px solid rgb(22, 24, 24);
+    padding: 1px 2px;
+    text-align: justify;
+    border-radius: 3px;
+
+}
+
+.table-bord .right-section .audience .region-domaine.flex {
+    gap: 65px;
+    margin: 1.2rem 0;
+}
+
+.table-bord .right-section .audience .region-domaine.flex label select {
+    margin-right: 10px;
+    color: black;
+    font-weight: 700;
+    background-color: hsl(0deg 0% 90.7%);
+    border: 1px solid rgb(22, 24, 24);
+    padding: 1px 2px;
+    text-align: justify;
+    border-radius: 3px;
+
+}
+
+
+
+/*navbar*/
+.table-bord .nav-top{
+
+    background-color: #727171;
+}
+.table-bord .nav-top h1{
+ color: black;
+    
+}
+.table-bord .content.flex{
+    align-items: stretch;
+    
+    
+}
+.table-bord .content.flex .left-section{
+    background-color: #6d6d6d;
+    margin-right: 34px;
+    
+}
+.table-bord .content.flex .left-section ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+}
+.table-bord .content.flex .left-section ul li{
+    background-color: #adabab;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #646363;
+    color: black;
+    font-weight: 700;
+ 
+}
+
+
